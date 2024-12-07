@@ -1,9 +1,8 @@
-import GetData from "@/components/getData";
-
+import GetDataItems from "@/components/getData";
 export default function Home() {
 	return (
 		<div>
-			<GetData />
+			<GetDataItems />
 		</div>
 	);
 }

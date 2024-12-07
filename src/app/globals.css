@@ -2,20 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.parentInput {
+	@apply flex flex-col gap-2 p-2;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+input {
+	@apply p-2 rounded-md shadow-sm focus:outline-none ring focus:ring-red-400;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.btn {
+	@apply rounded-md  transition-all py-2 px-4 text-white bg-orange-700 w-full hover:scale-95;
 }
